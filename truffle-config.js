@@ -66,8 +66,8 @@ module.exports = {
     arbitrumN: {
       network_id: "421613",
       provider: () => new HDWalletProvider(privateKey, "https://arb-goerli.g.alchemy.com/v2/XZ7fMZz04O0Tebm-62x6BX2YYJoe81Wi"),
-      //gasPrice: 20000000000,
-      //as: 4000000
+      //gasPrice: 1000000000,
+      //gasLimit: 1500000
     },
   },
 

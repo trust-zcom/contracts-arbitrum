@@ -1,5 +1,9 @@
 {
     "production": false,
+    "name_gyen": "GMO JPY",
+    "symbol_gyen": "GYEN",
+    "name_zusd": "Z.com USD",
+    "symbol_zusd": "ZUSD",
     "name_suffix": " arbitrum nitro test",
     "symbol_suffix": "ArbiN",
     "owner": "0xE6b48d76Bc4805ABF61F38A55F1D7C362c8BfdA8",

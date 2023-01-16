@@ -1,5 +1,9 @@
 {
     "production": true,
+    "name_gyen": "GMO JPY",
+    "symbol_gyen": "GYEN",
+    "name_zusd": "Z.com USD",
+    "symbol_zusd": "ZUSD",
     "name_suffix": "",
     "symbol_suffix": "",
     "owner": "0x3af9654636ecd171c4a1889b6fe5dbd1f1f09fd5",
