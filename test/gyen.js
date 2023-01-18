@@ -1,9 +1,9 @@
-const Token = artifacts.require("ArbToken_v1");
+const Token = artifacts.require("ArbToken_v2");
 const GYEN = artifacts.require("GYEN");
 const truffleAssert = require('truffle-assertions');
 const Web3EthAbi = require('web3-eth-abi');
 const { signERC2612Permit } = require('./utils/signERC2612Permit.js')
-const abi = require("../build/contracts/ArbToken_v1.json").abi;
+const abi = require("../build/contracts/ArbToken_v2.json").abi;
 
 const [initializeAbi] = abi.filter((f) => f.name === 'initialize');
 
@@ -473,6 +473,9 @@ contract("GYEN.sol", (accounts) => {
     let gaspender = accounts[13];
 
     it("can permit with signature", async () => {
+      // after initializeV2, permit could go well
+      await gyenInstance.initializeV2('GMO JPY Arbitrum 1', 'GYEN1');
+
       let nonce = await gyenInstance.nonces(approver);
       nonce = nonce.toString();
       const name = await gyenInstance.name();
@@ -507,6 +510,9 @@ contract("GYEN.sol", (accounts) => {
     });
 
     it("permit expired", async () => {
+      // after initializeV2, permit could go well
+      await gyenInstance.initializeV2('GMO JPY Arbitrum 1', 'GYEN1');
+
       let nonce = await gyenInstance.nonces(approver);
       nonce = nonce.toString();
       const name = await gyenInstance.name();
@@ -542,6 +548,9 @@ contract("GYEN.sol", (accounts) => {
     });
 
     it("invalid permit", async () => {
+      // after initializeV2, permit could go well
+      await gyenInstance.initializeV2('GMO JPY Arbitrum 1', 'GYEN1');
+      
       let nonce = await gyenInstance.nonces(approver);
       nonce = nonce.toString();
       const name = await gyenInstance.name();
@@ -576,4 +585,102 @@ contract("GYEN.sol", (accounts) => {
       );
     });
   });
+
+  describe('Test initializeV2 function', function() {
+
+    beforeEach(initialize);
+
+    it("name and symbol changed", async () => {
+      const newname = 'GMO JPY Arbitrum new';
+      const newsymbol = 'GYENN';
+
+      let up_tx = await gyenInstance.initializeV2(newname, newsymbol);
+
+      await truffleAssert.eventEmitted(up_tx, 'UpdateMetadata', (ev) => {
+        return ev._newName === newname && ev._newSymbol === newsymbol;
+      }, 'UpdateMetadata event should be emitted with correct parameters');
+
+      const name = await gyenInstance.name();
+      const symbol = await gyenInstance.symbol();
+      assert.strictEqual(name, newname, "name not correct!");
+      assert.strictEqual(symbol, newsymbol, "symbol not correct!");
+    });
+
+    it("InitializeV2 cannot call multiple times", async () => {
+      await gyenInstance.initializeV2('B', 'b');
+      await truffleAssert.reverts(
+        gyenInstance.initializeV2('B', 'b'),
+        truffleAssert.ErrorType.REVERT,
+        'This should be a fail test case!'
+      );
+    });
+
+  });
+
+  describe('Test updateMetadata function', function() {
+    beforeEach(initialize);
+
+    let approver = accounts[11];
+    let spender = accounts[12];
+    let gaspender = accounts[13];
+
+    it("updateMetadata and can permit with signature", async () => {
+
+      const newname = 'new name';
+      const newsymbol = 'NEWS';
+
+      let up_tx = await gyenInstance.updateMetadata(newname,newsymbol, {from: rescuer});
+      await truffleAssert.eventEmitted(up_tx, 'UpdateMetadata', (ev) => {
+        return ev._newName === newname && ev._newSymbol === newsymbol;
+      }, 'UpdateMetadata event should be emitted with correct parameters');
+
+      const name = await gyenInstance.name();
+      const symbol = await gyenInstance.symbol();
+      assert.strictEqual(name, newname, "name not correct!");
+      assert.strictEqual(symbol, newsymbol, "symbol not correct!");
+
+      let nonce = await gyenInstance.nonces(approver);
+      nonce = nonce.toString();
+
+      let chainid = await gyenInstance.deploymentChainId();;
+      chainid = chainid.toString();
+      const permitResult = await signERC2612Permit(
+        web3.currentProvider,
+        gyenInstance.address,
+        approver,
+        spender,
+        '10',
+        null,
+        nonce,
+        name,
+        chainid,
+        '1',
+      );
+      let old_allowance = await gyenInstance.allowance(approver, spender);
+      await gyenInstance.permit(
+        approver,
+        spender,
+        '10',
+        permitResult.deadline,
+        permitResult.v,
+        permitResult.r,
+        permitResult.s,
+        {from: gaspender}
+      );
+
+      let new_allowance = await gyenInstance.allowance(approver, spender);
+      assert.strictEqual(old_allowance.toNumber() + 10, new_allowance.toNumber(), "Allowance after approve not correct!");
+    });
+
+    it("Non rescuer cannot updateMetadata", async () => {
+      let non_rescuer =  accounts[11];
+
+      await truffleAssert.reverts(
+        gyenInstance.updateMetadata('a','A', {from: non_rescuer}),
+        truffleAssert.ErrorType.REVERT,
+        'This should be a fail test case!'
+      );
+    });
+  });
+
 })

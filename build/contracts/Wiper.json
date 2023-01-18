@@ -467,14 +467,14 @@
     "absolutePath": "/Users/usr0102794/gyen2022/arbitrum-l2/contracts/contracts/Roles/Wiper.sol",
     "exportedSymbols": {
       "Wiper": [
-        1351
+        1415
       ]
     },
-    "id": 1352,
+    "id": 1416,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1292,
+        "id": 1356,
         "literals": [
           "solidity",
           "0.5",
@@ -486,10 +486,10 @@
       {
         "absolutePath": "/Users/usr0102794/gyen2022/arbitrum-l2/contracts/contracts/Roles/Prohibiter.sol",
         "file": "./Prohibiter.sol",
-        "id": 1293,
+        "id": 1357,
         "nodeType": "ImportDirective",
-        "scope": 1352,
-        "sourceUnit": 1226,
+        "scope": 1416,
+        "sourceUnit": 1290,
         "src": "25:26:10",
         "symbolAliases": [],
         "unitAlias": ""
@@ -497,10 +497,10 @@
       {
         "absolutePath": "openzeppelin-solidity/contracts/token/ERC20/ERC20.sol",
         "file": "openzeppelin-solidity/contracts/token/ERC20/ERC20.sol",
-        "id": 1294,
+        "id": 1358,
         "nodeType": "ImportDirective",
-        "scope": 1352,
-        "sourceUnit": 2326,
+        "scope": 1416,
+        "sourceUnit": 2390,
         "src": "52:63:10",
         "symbolAliases": [],
         "unitAlias": ""
@@ -511,17 +511,17 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 1295,
+              "id": 1359,
               "name": "Prohibiter",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 1225,
+              "referencedDeclaration": 1289,
               "src": "135:10:10",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Prohibiter_$1225",
+                "typeIdentifier": "t_contract$_Prohibiter_$1289",
                 "typeString": "contract Prohibiter"
               }
             },
-            "id": 1296,
+            "id": 1360,
             "nodeType": "InheritanceSpecifier",
             "src": "135:10:10"
           },
@@ -529,49 +529,49 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 1297,
+              "id": 1361,
               "name": "ERC20",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 2325,
+              "referencedDeclaration": 2389,
               "src": "147:5:10",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_ERC20_$2325",
+                "typeIdentifier": "t_contract$_ERC20_$2389",
                 "typeString": "contract ERC20"
               }
             },
-            "id": 1298,
+            "id": 1362,
             "nodeType": "InheritanceSpecifier",
             "src": "147:5:10"
           }
         ],
         "contractDependencies": [
-          921,
-          1101,
-          1225,
-          2325,
-          2394
+          985,
+          1165,
+          1289,
+          2389,
+          2458
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 1351,
+        "id": 1415,
         "linearizedBaseContracts": [
-          1351,
-          2325,
-          2394,
-          1225,
-          1101,
-          921
+          1415,
+          2389,
+          2458,
+          1289,
+          1165,
+          985
         ],
         "name": "Wiper",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 1303,
+            "id": 1367,
             "name": "wiper",
             "nodeType": "VariableDeclaration",
-            "scope": 1351,
+            "scope": 1415,
             "src": "160:33:10",
             "stateVariable": true,
             "storageLocation": "default",
@@ -580,7 +580,7 @@
               "typeString": "address"
             },
             "typeName": {
-              "id": 1299,
+              "id": 1363,
               "name": "address",
               "nodeType": "ElementaryTypeName",
               "src": "160:7:10",
@@ -596,7 +596,7 @@
                 {
                   "argumentTypes": null,
                   "hexValue": "30",
-                  "id": 1301,
+                  "id": 1365,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -619,7 +619,7 @@
                     "typeString": "int_const 0"
                   }
                 ],
-                "id": 1300,
+                "id": 1364,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -632,7 +632,7 @@
                 },
                 "typeName": "address"
               },
-              "id": 1302,
+              "id": 1366,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -651,20 +651,20 @@
           {
             "anonymous": false,
             "documentation": null,
-            "id": 1309,
+            "id": 1373,
             "name": "Wipe",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 1308,
+              "id": 1372,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1305,
+                  "id": 1369,
                   "indexed": true,
                   "name": "addr",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1309,
+                  "scope": 1373,
                   "src": "210:20:10",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -673,7 +673,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1304,
+                    "id": 1368,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "210:7:10",
@@ -688,11 +688,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 1307,
+                  "id": 1371,
                   "indexed": false,
                   "name": "amount",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1309,
+                  "scope": 1373,
                   "src": "232:14:10",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -701,7 +701,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1306,
+                    "id": 1370,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "232:7:10",
@@ -720,7 +720,7 @@
           },
           {
             "body": {
-              "id": 1320,
+              "id": 1384,
               "nodeType": "Block",
               "src": "275:87:10",
               "statements": [
@@ -734,7 +734,7 @@
                           "typeIdentifier": "t_address",
                           "typeString": "address"
                         },
-                        "id": 1315,
+                        "id": 1379,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -743,18 +743,18 @@
                           "argumentTypes": null,
                           "expression": {
                             "argumentTypes": null,
-                            "id": 1312,
+                            "id": 1376,
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 2647,
+                            "referencedDeclaration": 2711,
                             "src": "293:3:10",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
                               "typeString": "msg"
                             }
                           },
-                          "id": 1313,
+                          "id": 1377,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -772,11 +772,11 @@
                         "operator": "==",
                         "rightExpression": {
                           "argumentTypes": null,
-                          "id": 1314,
+                          "id": 1378,
                           "name": "wiper",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1303,
+                          "referencedDeclaration": 1367,
                           "src": "307:5:10",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
@@ -792,7 +792,7 @@
                       {
                         "argumentTypes": null,
                         "hexValue": "7468652073656e646572206973206e6f7420746865207769706572",
-                        "id": 1316,
+                        "id": 1380,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -819,21 +819,21 @@
                           "typeString": "literal_string \"the sender is not the wiper\""
                         }
                       ],
-                      "id": 1311,
+                      "id": 1375,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        2650,
-                        2651
+                        2714,
+                        2715
                       ],
-                      "referencedDeclaration": 2651,
+                      "referencedDeclaration": 2715,
                       "src": "285:7:10",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 1317,
+                    "id": 1381,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -847,23 +847,23 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 1318,
+                  "id": 1382,
                   "nodeType": "ExpressionStatement",
                   "src": "285:59:10"
                 },
                 {
-                  "id": 1319,
+                  "id": 1383,
                   "nodeType": "PlaceholderStatement",
                   "src": "354:1:10"
                 }
               ]
             },
             "documentation": null,
-            "id": 1321,
+            "id": 1385,
             "name": "onlyWiper",
             "nodeType": "ModifierDefinition",
             "parameters": {
-              "id": 1310,
+              "id": 1374,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "272:2:10"
@@ -873,21 +873,21 @@
           },
           {
             "body": {
-              "id": 1349,
+              "id": 1413,
               "nodeType": "Block",
               "src": "456:129:10",
               "statements": [
                 {
                   "assignments": [
-                    1334
+                    1398
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 1334,
+                      "id": 1398,
                       "name": "_balance",
                       "nodeType": "VariableDeclaration",
-                      "scope": 1349,
+                      "scope": 1413,
                       "src": "466:16:10",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -896,7 +896,7 @@
                         "typeString": "uint256"
                       },
                       "typeName": {
-                        "id": 1333,
+                        "id": 1397,
                         "name": "uint256",
                         "nodeType": "ElementaryTypeName",
                         "src": "466:7:10",
@@ -909,17 +909,17 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 1338,
+                  "id": 1402,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 1336,
+                        "id": 1400,
                         "name": "_account",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1323,
+                        "referencedDeclaration": 1387,
                         "src": "495:8:10",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -934,18 +934,18 @@
                           "typeString": "address"
                         }
                       ],
-                      "id": 1335,
+                      "id": 1399,
                       "name": "balanceOf",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1969,
+                      "referencedDeclaration": 2033,
                       "src": "485:9:10",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_view$_t_address_$returns$_t_uint256_$",
                         "typeString": "function (address) view returns (uint256)"
                       }
                     },
-                    "id": 1337,
+                    "id": 1401,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -968,11 +968,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 1340,
+                        "id": 1404,
                         "name": "_account",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1323,
+                        "referencedDeclaration": 1387,
                         "src": "520:8:10",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -981,11 +981,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 1341,
+                        "id": 1405,
                         "name": "_balance",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1334,
+                        "referencedDeclaration": 1398,
                         "src": "530:8:10",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -1004,18 +1004,18 @@
                           "typeString": "uint256"
                         }
                       ],
-                      "id": 1339,
+                      "id": 1403,
                       "name": "_burn",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2254,
+                      "referencedDeclaration": 2318,
                       "src": "514:5:10",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_address_$_t_uint256_$returns$__$",
                         "typeString": "function (address,uint256)"
                       }
                     },
-                    "id": 1342,
+                    "id": 1406,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1029,7 +1029,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 1343,
+                  "id": 1407,
                   "nodeType": "ExpressionStatement",
                   "src": "514:25:10"
                 },
@@ -1039,11 +1039,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 1345,
+                        "id": 1409,
                         "name": "_account",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1323,
+                        "referencedDeclaration": 1387,
                         "src": "559:8:10",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -1052,11 +1052,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 1346,
+                        "id": 1410,
                         "name": "_balance",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1334,
+                        "referencedDeclaration": 1398,
                         "src": "569:8:10",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -1075,18 +1075,18 @@
                           "typeString": "uint256"
                         }
                       ],
-                      "id": 1344,
+                      "id": 1408,
                       "name": "Wipe",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1309,
+                      "referencedDeclaration": 1373,
                       "src": "554:4:10",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_address_$_t_uint256_$returns$__$",
                         "typeString": "function (address,uint256)"
                       }
                     },
-                    "id": 1347,
+                    "id": 1411,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1100,27 +1100,27 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 1348,
+                  "id": 1412,
                   "nodeType": "EmitStatement",
                   "src": "549:29:10"
                 }
               ]
             },
             "documentation": null,
-            "id": 1350,
+            "id": 1414,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
                 "arguments": null,
-                "id": 1326,
+                "id": 1390,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 1325,
+                  "id": 1389,
                   "name": "whenNotPaused",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 1055,
+                  "referencedDeclaration": 1119,
                   "src": "407:13:10",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -1132,14 +1132,14 @@
               },
               {
                 "arguments": null,
-                "id": 1328,
+                "id": 1392,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 1327,
+                  "id": 1391,
                   "name": "onlyWiper",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 1321,
+                  "referencedDeclaration": 1385,
                   "src": "421:9:10",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -1153,11 +1153,11 @@
                 "arguments": [
                   {
                     "argumentTypes": null,
-                    "id": 1330,
+                    "id": 1394,
                     "name": "_account",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 1323,
+                    "referencedDeclaration": 1387,
                     "src": "446:8:10",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -1165,14 +1165,14 @@
                     }
                   }
                 ],
-                "id": 1331,
+                "id": 1395,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 1329,
+                  "id": 1393,
                   "name": "onlyProhibited",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 1162,
+                  "referencedDeclaration": 1226,
                   "src": "431:14:10",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$_t_address_$",
@@ -1186,15 +1186,15 @@
             "name": "wipe",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1324,
+              "id": 1388,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1323,
+                  "id": 1387,
                   "name": "_account",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1350,
+                  "scope": 1414,
                   "src": "382:16:10",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1203,7 +1203,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1322,
+                    "id": 1386,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "382:7:10",
@@ -1220,19 +1220,19 @@
               "src": "381:18:10"
             },
             "returnParameters": {
-              "id": 1332,
+              "id": 1396,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "456:0:10"
             },
-            "scope": 1351,
+            "scope": 1415,
             "src": "368:217:10",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 1352,
+        "scope": 1416,
         "src": "117:470:10"
       }
     ],
@@ -1242,14 +1242,14 @@
     "absolutePath": "/Users/usr0102794/gyen2022/arbitrum-l2/contracts/contracts/Roles/Wiper.sol",
     "exportedSymbols": {
       "Wiper": [
-        1351
+        1415
       ]
     },
-    "id": 1352,
+    "id": 1416,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1292,
+        "id": 1356,
         "literals": [
           "solidity",
           "0.5",
@@ -1261,10 +1261,10 @@
       {
         "absolutePath": "/Users/usr0102794/gyen2022/arbitrum-l2/contracts/contracts/Roles/Prohibiter.sol",
         "file": "./Prohibiter.sol",
-        "id": 1293,
+        "id": 1357,
         "nodeType": "ImportDirective",
-        "scope": 1352,
-        "sourceUnit": 1226,
+        "scope": 1416,
+        "sourceUnit": 1290,
         "src": "25:26:10",
         "symbolAliases": [],
         "unitAlias": ""
@@ -1272,10 +1272,10 @@
       {
         "absolutePath": "openzeppelin-solidity/contracts/token/ERC20/ERC20.sol",
         "file": "openzeppelin-solidity/contracts/token/ERC20/ERC20.sol",
-        "id": 1294,
+        "id": 1358,
         "nodeType": "ImportDirective",
-        "scope": 1352,
-        "sourceUnit": 2326,
+        "scope": 1416,
+        "sourceUnit": 2390,
         "src": "52:63:10",
         "symbolAliases": [],
         "unitAlias": ""
@@ -1286,17 +1286,17 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 1295,
+              "id": 1359,
               "name": "Prohibiter",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 1225,
+              "referencedDeclaration": 1289,
               "src": "135:10:10",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Prohibiter_$1225",
+                "typeIdentifier": "t_contract$_Prohibiter_$1289",
                 "typeString": "contract Prohibiter"
               }
             },
-            "id": 1296,
+            "id": 1360,
             "nodeType": "InheritanceSpecifier",
             "src": "135:10:10"
           },
@@ -1304,49 +1304,49 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 1297,
+              "id": 1361,
               "name": "ERC20",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 2325,
+              "referencedDeclaration": 2389,
               "src": "147:5:10",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_ERC20_$2325",
+                "typeIdentifier": "t_contract$_ERC20_$2389",
                 "typeString": "contract ERC20"
               }
             },
-            "id": 1298,
+            "id": 1362,
             "nodeType": "InheritanceSpecifier",
             "src": "147:5:10"
           }
         ],
         "contractDependencies": [
-          921,
-          1101,
-          1225,
-          2325,
-          2394
+          985,
+          1165,
+          1289,
+          2389,
+          2458
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 1351,
+        "id": 1415,
         "linearizedBaseContracts": [
-          1351,
-          2325,
-          2394,
-          1225,
-          1101,
-          921
+          1415,
+          2389,
+          2458,
+          1289,
+          1165,
+          985
         ],
         "name": "Wiper",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 1303,
+            "id": 1367,
             "name": "wiper",
             "nodeType": "VariableDeclaration",
-            "scope": 1351,
+            "scope": 1415,
             "src": "160:33:10",
             "stateVariable": true,
             "storageLocation": "default",
@@ -1355,7 +1355,7 @@
               "typeString": "address"
             },
             "typeName": {
-              "id": 1299,
+              "id": 1363,
               "name": "address",
               "nodeType": "ElementaryTypeName",
               "src": "160:7:10",
@@ -1371,7 +1371,7 @@
                 {
                   "argumentTypes": null,
                   "hexValue": "30",
-                  "id": 1301,
+                  "id": 1365,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -1394,7 +1394,7 @@
                     "typeString": "int_const 0"
                   }
                 ],
-                "id": 1300,
+                "id": 1364,
                 "isConstant": false,
                 "isLValue": false,
                 "isPure": true,
@@ -1407,7 +1407,7 @@
                 },
                 "typeName": "address"
               },
-              "id": 1302,
+              "id": 1366,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -1426,20 +1426,20 @@
           {
             "anonymous": false,
             "documentation": null,
-            "id": 1309,
+            "id": 1373,
             "name": "Wipe",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 1308,
+              "id": 1372,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1305,
+                  "id": 1369,
                   "indexed": true,
                   "name": "addr",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1309,
+                  "scope": 1373,
                   "src": "210:20:10",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1448,7 +1448,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1304,
+                    "id": 1368,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "210:7:10",
@@ -1463,11 +1463,11 @@
                 },
                 {
                   "constant": false,
-                  "id": 1307,
+                  "id": 1371,
                   "indexed": false,
                   "name": "amount",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1309,
+                  "scope": 1373,
                   "src": "232:14:10",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1476,7 +1476,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1306,
+                    "id": 1370,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "232:7:10",
@@ -1495,7 +1495,7 @@
           },
           {
             "body": {
-              "id": 1320,
+              "id": 1384,
               "nodeType": "Block",
               "src": "275:87:10",
               "statements": [
@@ -1509,7 +1509,7 @@
                           "typeIdentifier": "t_address",
                           "typeString": "address"
                         },
-                        "id": 1315,
+                        "id": 1379,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1518,18 +1518,18 @@
                           "argumentTypes": null,
                           "expression": {
                             "argumentTypes": null,
-                            "id": 1312,
+                            "id": 1376,
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 2647,
+                            "referencedDeclaration": 2711,
                             "src": "293:3:10",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
                               "typeString": "msg"
                             }
                           },
-                          "id": 1313,
+                          "id": 1377,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -1547,11 +1547,11 @@
                         "operator": "==",
                         "rightExpression": {
                           "argumentTypes": null,
-                          "id": 1314,
+                          "id": 1378,
                           "name": "wiper",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1303,
+                          "referencedDeclaration": 1367,
                           "src": "307:5:10",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
@@ -1567,7 +1567,7 @@
                       {
                         "argumentTypes": null,
                         "hexValue": "7468652073656e646572206973206e6f7420746865207769706572",
-                        "id": 1316,
+                        "id": 1380,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -1594,21 +1594,21 @@
                           "typeString": "literal_string \"the sender is not the wiper\""
                         }
                       ],
-                      "id": 1311,
+                      "id": 1375,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        2650,
-                        2651
+                        2714,
+                        2715
                       ],
-                      "referencedDeclaration": 2651,
+                      "referencedDeclaration": 2715,
                       "src": "285:7:10",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 1317,
+                    "id": 1381,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1622,23 +1622,23 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 1318,
+                  "id": 1382,
                   "nodeType": "ExpressionStatement",
                   "src": "285:59:10"
                 },
                 {
-                  "id": 1319,
+                  "id": 1383,
                   "nodeType": "PlaceholderStatement",
                   "src": "354:1:10"
                 }
               ]
             },
             "documentation": null,
-            "id": 1321,
+            "id": 1385,
             "name": "onlyWiper",
             "nodeType": "ModifierDefinition",
             "parameters": {
-              "id": 1310,
+              "id": 1374,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "272:2:10"
@@ -1648,21 +1648,21 @@
           },
           {
             "body": {
-              "id": 1349,
+              "id": 1413,
               "nodeType": "Block",
               "src": "456:129:10",
               "statements": [
                 {
                   "assignments": [
-                    1334
+                    1398
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 1334,
+                      "id": 1398,
                       "name": "_balance",
                       "nodeType": "VariableDeclaration",
-                      "scope": 1349,
+                      "scope": 1413,
                       "src": "466:16:10",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -1671,7 +1671,7 @@
                         "typeString": "uint256"
                       },
                       "typeName": {
-                        "id": 1333,
+                        "id": 1397,
                         "name": "uint256",
                         "nodeType": "ElementaryTypeName",
                         "src": "466:7:10",
@@ -1684,17 +1684,17 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 1338,
+                  "id": 1402,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 1336,
+                        "id": 1400,
                         "name": "_account",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1323,
+                        "referencedDeclaration": 1387,
                         "src": "495:8:10",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -1709,18 +1709,18 @@
                           "typeString": "address"
                         }
                       ],
-                      "id": 1335,
+                      "id": 1399,
                       "name": "balanceOf",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1969,
+                      "referencedDeclaration": 2033,
                       "src": "485:9:10",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_view$_t_address_$returns$_t_uint256_$",
                         "typeString": "function (address) view returns (uint256)"
                       }
                     },
-                    "id": 1337,
+                    "id": 1401,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1743,11 +1743,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 1340,
+                        "id": 1404,
                         "name": "_account",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1323,
+                        "referencedDeclaration": 1387,
                         "src": "520:8:10",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -1756,11 +1756,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 1341,
+                        "id": 1405,
                         "name": "_balance",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1334,
+                        "referencedDeclaration": 1398,
                         "src": "530:8:10",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -1779,18 +1779,18 @@
                           "typeString": "uint256"
                         }
                       ],
-                      "id": 1339,
+                      "id": 1403,
                       "name": "_burn",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 2254,
+                      "referencedDeclaration": 2318,
                       "src": "514:5:10",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_address_$_t_uint256_$returns$__$",
                         "typeString": "function (address,uint256)"
                       }
                     },
-                    "id": 1342,
+                    "id": 1406,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1804,7 +1804,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 1343,
+                  "id": 1407,
                   "nodeType": "ExpressionStatement",
                   "src": "514:25:10"
                 },
@@ -1814,11 +1814,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 1345,
+                        "id": 1409,
                         "name": "_account",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1323,
+                        "referencedDeclaration": 1387,
                         "src": "559:8:10",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -1827,11 +1827,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 1346,
+                        "id": 1410,
                         "name": "_balance",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1334,
+                        "referencedDeclaration": 1398,
                         "src": "569:8:10",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -1850,18 +1850,18 @@
                           "typeString": "uint256"
                         }
                       ],
-                      "id": 1344,
+                      "id": 1408,
                       "name": "Wipe",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1309,
+                      "referencedDeclaration": 1373,
                       "src": "554:4:10",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_address_$_t_uint256_$returns$__$",
                         "typeString": "function (address,uint256)"
                       }
                     },
-                    "id": 1347,
+                    "id": 1411,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1875,27 +1875,27 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 1348,
+                  "id": 1412,
                   "nodeType": "EmitStatement",
                   "src": "549:29:10"
                 }
               ]
             },
             "documentation": null,
-            "id": 1350,
+            "id": 1414,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
                 "arguments": null,
-                "id": 1326,
+                "id": 1390,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 1325,
+                  "id": 1389,
                   "name": "whenNotPaused",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 1055,
+                  "referencedDeclaration": 1119,
                   "src": "407:13:10",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -1907,14 +1907,14 @@
               },
               {
                 "arguments": null,
-                "id": 1328,
+                "id": 1392,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 1327,
+                  "id": 1391,
                   "name": "onlyWiper",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 1321,
+                  "referencedDeclaration": 1385,
                   "src": "421:9:10",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -1928,11 +1928,11 @@
                 "arguments": [
                   {
                     "argumentTypes": null,
-                    "id": 1330,
+                    "id": 1394,
                     "name": "_account",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 1323,
+                    "referencedDeclaration": 1387,
                     "src": "446:8:10",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -1940,14 +1940,14 @@
                     }
                   }
                 ],
-                "id": 1331,
+                "id": 1395,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 1329,
+                  "id": 1393,
                   "name": "onlyProhibited",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 1162,
+                  "referencedDeclaration": 1226,
                   "src": "431:14:10",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$_t_address_$",
@@ -1961,15 +1961,15 @@
             "name": "wipe",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1324,
+              "id": 1388,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1323,
+                  "id": 1387,
                   "name": "_account",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1350,
+                  "scope": 1414,
                   "src": "382:16:10",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1978,7 +1978,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1322,
+                    "id": 1386,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "382:7:10",
@@ -1995,19 +1995,19 @@
               "src": "381:18:10"
             },
             "returnParameters": {
-              "id": 1332,
+              "id": 1396,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "456:0:10"
             },
-            "scope": 1351,
+            "scope": 1415,
             "src": "368:217:10",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 1352,
+        "scope": 1416,
         "src": "117:470:10"
       }
     ],
@@ -2019,7 +2019,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.16",
-  "updatedAt": "2023-01-13T09:10:46.802Z",
+  "updatedAt": "2023-01-17T10:04:05.856Z",
   "devdoc": {
     "methods": {
       "allowance(address,address)": {

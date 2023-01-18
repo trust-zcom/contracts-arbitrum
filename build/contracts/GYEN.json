@@ -152,14 +152,14 @@
     "absolutePath": "/Users/usr0102794/gyen2022/arbitrum-l2/contracts/contracts/GYEN.sol",
     "exportedSymbols": {
       "GYEN": [
-        665
+        729
       ]
     },
-    "id": 666,
+    "id": 730,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 646,
+        "id": 710,
         "literals": [
           "solidity",
           "0.5",
@@ -171,10 +171,10 @@
       {
         "absolutePath": "@openzeppelin/upgrades/contracts/upgradeability/AdminUpgradeabilityProxy.sol",
         "file": "@openzeppelin/upgrades/contracts/upgradeability/AdminUpgradeabilityProxy.sol",
-        "id": 647,
+        "id": 711,
         "nodeType": "ImportDirective",
-        "scope": 666,
-        "sourceUnit": 1476,
+        "scope": 730,
+        "sourceUnit": 1540,
         "src": "25:86:2",
         "symbolAliases": [],
         "unitAlias": ""
@@ -185,52 +185,52 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 648,
+              "id": 712,
               "name": "AdminUpgradeabilityProxy",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 1475,
+              "referencedDeclaration": 1539,
               "src": "130:24:2",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_AdminUpgradeabilityProxy_$1475",
+                "typeIdentifier": "t_contract$_AdminUpgradeabilityProxy_$1539",
                 "typeString": "contract AdminUpgradeabilityProxy"
               }
             },
-            "id": 649,
+            "id": 713,
             "nodeType": "InheritanceSpecifier",
             "src": "130:24:2"
           }
         ],
         "contractDependencies": [
-          1475,
-          1631,
-          1689,
-          1727,
-          1776
+          1539,
+          1695,
+          1753,
+          1791,
+          1840
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 665,
+        "id": 729,
         "linearizedBaseContracts": [
-          665,
-          1475,
-          1776,
-          1631,
-          1689,
-          1727
+          729,
+          1539,
+          1840,
+          1695,
+          1753,
+          1791
         ],
         "name": "GYEN",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 663,
+              "id": 727,
               "nodeType": "Block",
               "src": "289:2:2",
               "statements": []
             },
             "documentation": null,
-            "id": 664,
+            "id": 728,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [
@@ -238,11 +238,11 @@
                 "arguments": [
                   {
                     "argumentTypes": null,
-                    "id": 658,
+                    "id": 722,
                     "name": "_logic",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 651,
+                    "referencedDeclaration": 715,
                     "src": "266:6:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -251,11 +251,11 @@
                   },
                   {
                     "argumentTypes": null,
-                    "id": 659,
+                    "id": 723,
                     "name": "_admin",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 653,
+                    "referencedDeclaration": 717,
                     "src": "274:6:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -264,11 +264,11 @@
                   },
                   {
                     "argumentTypes": null,
-                    "id": 660,
+                    "id": 724,
                     "name": "_data",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 655,
+                    "referencedDeclaration": 719,
                     "src": "282:5:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes_memory_ptr",
@@ -276,17 +276,17 @@
                     }
                   }
                 ],
-                "id": 661,
+                "id": 725,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 657,
+                  "id": 721,
                   "name": "AdminUpgradeabilityProxy",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 1475,
+                  "referencedDeclaration": 1539,
                   "src": "241:24:2",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_type$_t_contract$_AdminUpgradeabilityProxy_$1475_$",
+                    "typeIdentifier": "t_type$_t_contract$_AdminUpgradeabilityProxy_$1539_$",
                     "typeString": "type(contract AdminUpgradeabilityProxy)"
                   }
                 },
@@ -297,15 +297,15 @@
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 656,
+              "id": 720,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 651,
+                  "id": 715,
                   "name": "_logic",
                   "nodeType": "VariableDeclaration",
-                  "scope": 664,
+                  "scope": 728,
                   "src": "174:14:2",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -314,7 +314,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 650,
+                    "id": 714,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "174:7:2",
@@ -329,10 +329,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 653,
+                  "id": 717,
                   "name": "_admin",
                   "nodeType": "VariableDeclaration",
-                  "scope": 664,
+                  "scope": 728,
                   "src": "190:14:2",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -341,7 +341,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 652,
+                    "id": 716,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "190:7:2",
@@ -356,10 +356,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 655,
+                  "id": 719,
                   "name": "_data",
                   "nodeType": "VariableDeclaration",
-                  "scope": 664,
+                  "scope": 728,
                   "src": "206:18:2",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -368,7 +368,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 654,
+                    "id": 718,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "206:5:2",
@@ -384,19 +384,19 @@
               "src": "173:52:2"
             },
             "returnParameters": {
-              "id": 662,
+              "id": 726,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "289:0:2"
             },
-            "scope": 665,
+            "scope": 729,
             "src": "162:129:2",
             "stateMutability": "payable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 666,
+        "scope": 730,
         "src": "113:181:2"
       }
     ],
@@ -406,14 +406,14 @@
     "absolutePath": "/Users/usr0102794/gyen2022/arbitrum-l2/contracts/contracts/GYEN.sol",
     "exportedSymbols": {
       "GYEN": [
-        665
+        729
       ]
     },
-    "id": 666,
+    "id": 730,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 646,
+        "id": 710,
         "literals": [
           "solidity",
           "0.5",
@@ -425,10 +425,10 @@
       {
         "absolutePath": "@openzeppelin/upgrades/contracts/upgradeability/AdminUpgradeabilityProxy.sol",
         "file": "@openzeppelin/upgrades/contracts/upgradeability/AdminUpgradeabilityProxy.sol",
-        "id": 647,
+        "id": 711,
         "nodeType": "ImportDirective",
-        "scope": 666,
-        "sourceUnit": 1476,
+        "scope": 730,
+        "sourceUnit": 1540,
         "src": "25:86:2",
         "symbolAliases": [],
         "unitAlias": ""
@@ -439,52 +439,52 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 648,
+              "id": 712,
               "name": "AdminUpgradeabilityProxy",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 1475,
+              "referencedDeclaration": 1539,
               "src": "130:24:2",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_AdminUpgradeabilityProxy_$1475",
+                "typeIdentifier": "t_contract$_AdminUpgradeabilityProxy_$1539",
                 "typeString": "contract AdminUpgradeabilityProxy"
               }
             },
-            "id": 649,
+            "id": 713,
             "nodeType": "InheritanceSpecifier",
             "src": "130:24:2"
           }
         ],
         "contractDependencies": [
-          1475,
-          1631,
-          1689,
-          1727,
-          1776
+          1539,
+          1695,
+          1753,
+          1791,
+          1840
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 665,
+        "id": 729,
         "linearizedBaseContracts": [
-          665,
-          1475,
-          1776,
-          1631,
-          1689,
-          1727
+          729,
+          1539,
+          1840,
+          1695,
+          1753,
+          1791
         ],
         "name": "GYEN",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 663,
+              "id": 727,
               "nodeType": "Block",
               "src": "289:2:2",
               "statements": []
             },
             "documentation": null,
-            "id": 664,
+            "id": 728,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [
@@ -492,11 +492,11 @@
                 "arguments": [
                   {
                     "argumentTypes": null,
-                    "id": 658,
+                    "id": 722,
                     "name": "_logic",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 651,
+                    "referencedDeclaration": 715,
                     "src": "266:6:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -505,11 +505,11 @@
                   },
                   {
                     "argumentTypes": null,
-                    "id": 659,
+                    "id": 723,
                     "name": "_admin",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 653,
+                    "referencedDeclaration": 717,
                     "src": "274:6:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -518,11 +518,11 @@
                   },
                   {
                     "argumentTypes": null,
-                    "id": 660,
+                    "id": 724,
                     "name": "_data",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 655,
+                    "referencedDeclaration": 719,
                     "src": "282:5:2",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes_memory_ptr",
@@ -530,17 +530,17 @@
                     }
                   }
                 ],
-                "id": 661,
+                "id": 725,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 657,
+                  "id": 721,
                   "name": "AdminUpgradeabilityProxy",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 1475,
+                  "referencedDeclaration": 1539,
                   "src": "241:24:2",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_type$_t_contract$_AdminUpgradeabilityProxy_$1475_$",
+                    "typeIdentifier": "t_type$_t_contract$_AdminUpgradeabilityProxy_$1539_$",
                     "typeString": "type(contract AdminUpgradeabilityProxy)"
                   }
                 },
@@ -551,15 +551,15 @@
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 656,
+              "id": 720,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 651,
+                  "id": 715,
                   "name": "_logic",
                   "nodeType": "VariableDeclaration",
-                  "scope": 664,
+                  "scope": 728,
                   "src": "174:14:2",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -568,7 +568,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 650,
+                    "id": 714,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "174:7:2",
@@ -583,10 +583,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 653,
+                  "id": 717,
                   "name": "_admin",
                   "nodeType": "VariableDeclaration",
-                  "scope": 664,
+                  "scope": 728,
                   "src": "190:14:2",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -595,7 +595,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 652,
+                    "id": 716,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "190:7:2",
@@ -610,10 +610,10 @@
                 },
                 {
                   "constant": false,
-                  "id": 655,
+                  "id": 719,
                   "name": "_data",
                   "nodeType": "VariableDeclaration",
-                  "scope": 664,
+                  "scope": 728,
                   "src": "206:18:2",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -622,7 +622,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 654,
+                    "id": 718,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "206:5:2",
@@ -638,19 +638,19 @@
               "src": "173:52:2"
             },
             "returnParameters": {
-              "id": 662,
+              "id": 726,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "289:0:2"
             },
-            "scope": 665,
+            "scope": 729,
             "src": "162:129:2",
             "stateMutability": "payable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 666,
+        "scope": 730,
         "src": "113:181:2"
       }
     ],
@@ -781,12 +781,12 @@
         }
       },
       "links": {},
-      "address": "0xCA206bDa2FfAdc10CDeB1C5c0566e6e5c952C895",
-      "transactionHash": "0x96a7d1deb4a123502a2a15314cc50cc3acfe4c070903be173790ff84e1e5173f"
+      "address": "0x4FE71EffEce203D41f7271C448F7804A1249E21e",
+      "transactionHash": "0x0d44f5fa323bb03c99761950423ca42c1b093791475a62094971adbd66552e8f"
     }
   },
   "schemaVersion": "3.0.16",
-  "updatedAt": "2023-01-16T07:37:09.007Z",
+  "updatedAt": "2023-01-17T10:07:48.795Z",
   "devdoc": {
     "methods": {
       "admin()": {
