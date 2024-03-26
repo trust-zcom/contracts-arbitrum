@@ -11,7 +11,7 @@
 
 case $2 in
     1)
-        npx truffle migrate --network $1
+        npx truffle migrate --network $1 --f 1 --to 4
         ;;
 
     2)

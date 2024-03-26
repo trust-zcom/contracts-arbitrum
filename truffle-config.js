@@ -70,7 +70,7 @@ module.exports = {
       //gasLimit: 1500000
     },
     arbitrumSepolia: {
-      network_id: "11155111",
+      network_id: "421614",
       provider: () => new HDWalletProvider(privateKey, "https://arb-sepolia.g.alchemy.com/v2/fvljvuPNBvIXRbw791dQ-ltqsQZlsKBi"),
     },
   },
