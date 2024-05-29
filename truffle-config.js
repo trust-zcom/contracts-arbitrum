@@ -78,6 +78,10 @@ module.exports = {
       //gasPrice: 1000000000,
       //gasLimit: 1500000
     },
+    arbitrumSepolia: {
+      network_id: "421614",
+      provider: () => new HDWalletProvider(privateKey, "https://arb-sepolia.g.alchemy.com/v2/fvljvuPNBvIXRbw791dQ-ltqsQZlsKBi"),
+    },
   },
 
   // Set default mocha options here, use special reporters etc.
