@@ -5,5 +5,5 @@
 .nyc_output
 coverage/*
 coverage.json
-
+/mapping/node_modules/*
 .secret*
