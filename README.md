@@ -36,15 +36,15 @@ The standard ERC-20 `approve()` and `transferFrom()` might cause a race conditio
 
 ## Minting and Burning
 
-When mint tokens on Arbitrum, callable path is L1Gateway depositToken (which handles L1 escrow), which triggers L2Gateway, `bridgeMint` will be called.
+When move tokens from Ethereum to Arbitrum, callable path is L1Gateway depositToken (which handles L1 escrow), which triggers L2Gateway, `bridgeMint` will be called.
 
-For burning tokens on Arbitrum, `bridgeBurn` will be called. Only the token bridge can call this.
+When move tokens from Arbitrum to Ethereum, `bridgeBurn` will be called. Only the token bridge can call this.
 
 ## Prohibit
 
 `prohibit` is a security feature implemented for the purpose of Anti-Money Laundering (AML) activities. `prohibiter` can prevent specific end users (addresses) from performing token transactions.
 
-## Pausing
+## Pause
 
 `pause` is a security feature intended for use in emergencies. While the `pauser` pauses the token, all transactions (except `changeAdmin()`, the reassignment of `admin` and `changePauser`, reassignment of `pauser`) are stopped and will fail.
 
