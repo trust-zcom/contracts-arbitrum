@@ -36,6 +36,7 @@ The standard ERC-20 `approve()` and `transferFrom()` might cause a race conditio
 
 ## Minting and Burning
 
+GYEN/ZUSD is native to Ethereum. It can be bridged to Arbitrum.
 When move tokens from Ethereum to Arbitrum, callable path is L1Gateway depositToken (which handles L1 escrow), which triggers L2Gateway, `bridgeMint` will be called.
 
 When move tokens from Arbitrum to Ethereum, `bridgeBurn` will be called. Only the token bridge can call this.
